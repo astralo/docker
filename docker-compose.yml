@@ -48,7 +48,7 @@ services:
     build: ./docker/php
     container_name: "app"
     volumes:
-      - .:/app
+      - ../:/app
     depends_on:
       - mysql
       - redis
